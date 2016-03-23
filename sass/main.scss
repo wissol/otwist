@@ -65,7 +65,7 @@ li a:focus, li a:hover{
 	font-size: $base-font-size;
 }
 
-body, main {
+body {
 	font-size: $base-font-size;
 	margin: auto;
 	width: 95vw;
@@ -73,7 +73,10 @@ body, main {
 }
 
 main {
-	max-width: main-width;
+	font-size: $base-font-size;
+	margin: auto;
+	width: 95vw;
+	max-width: 900px;
 }
 
 h1 {
@@ -100,7 +103,7 @@ section {
 
 p {
 	font-family: $paragraph-font;
-	line-height: 1.3;
+	line-height: 1.4;
 	margin: 0;
 }
 

@@ -41,14 +41,17 @@ li a:focus, li a:hover {
   font-variant: small-caps;
   font-size: 1.3rem; }
 
-body, main {
+body {
   font-size: 1.3rem;
   margin: auto;
   width: 95vw;
   max-width: 900px; }
 
 main {
-  max-width: main-width; }
+  font-size: 1.3rem;
+  margin: auto;
+  width: 95vw;
+  max-width: 900px; }
 
 h1 {
   font-size: 2.5rem;
@@ -69,7 +72,7 @@ section {
 
 p {
   font-family: "Lora", serif;
-  line-height: 1.3;
+  line-height: 1.4;
   margin: 0; }
 
 p + p {
