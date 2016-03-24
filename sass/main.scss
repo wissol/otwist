@@ -67,6 +67,13 @@ figure {
 	width: 100%;
 }
 
+footer {
+	font-size: $small-font-size;
+	width: 80%;
+	max-width: 600px;
+	margin: 0 auto 25vh auto;
+}
+
 //lists
 
 ul {
@@ -141,6 +148,14 @@ p {
 
 p + p {
 	text-indent: 3rem;
+}
+
+#the_end {
+	margin: 15vh auto;
+	text-align: center;
+	font-variant: small-caps;
+	font-size: $h1-size;
+	font-family: $header-font;
 }
 
 // images and captions
