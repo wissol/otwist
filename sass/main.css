@@ -63,6 +63,9 @@ h1, h2 {
 h2 {
   text-align: center; }
 
+#toc-header {
+  margin: 0 auto 6vh auto; }
+
 .abstract {
   display: block;
   margin: 3vh 0 9vh 0; }
@@ -86,6 +89,21 @@ figcaption {
   margin: 3vh auto;
   font-family: "Lora", serif;
   width: 80%;
-  max-width: 700px; }
+  max-width: 700px;
+  text-align: center; }
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+body,
+header,
+ul {
+  max-width: 1300px;
+  padding: 0; }
+
+li {
+  width: 450px; }
 
 /*# sourceMappingURL=main.css.map */
