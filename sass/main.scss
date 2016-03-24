@@ -1,3 +1,5 @@
+// Variables 
+
 $color-merino: #F8F3ED;
 $base-font-size: 1.3rem;
 $small-font-size: 1rem;
@@ -14,13 +16,40 @@ $header-font: 'Slabo 27px', serif;
 $paragraph-font: 'Lora', serif;
 $main-width: 700px;
 
+//main containers
+
 html {
 	background-color: $color-merino;
+}
+
+
+body {
+	font-size: $base-font-size;
+	margin: auto;
+	width: 95vw;
 }
 
 header {
 	text-align: center;
 	margin: $header-margin;
+}
+
+main {
+	font-size: $base-font-size;
+	margin: auto;
+	width: 95vw;
+	max-width: 900px;
+}
+
+body,
+header,
+ul {
+		max-width:1300px;
+		padding:0;		
+	}
+
+section {
+	margin: $section-margin;
 }
 
 address {
@@ -38,22 +67,31 @@ figure {
 	width: 100%;
 }
 
+//lists
+
 ul {
 	list-style: none;
-	margin: auto;
-	max-width: $main-width / 1.5;
+	margin: 0 auto 100vh auto;
+	display:flex;		
+	flex-wrap: wrap;
+	justify-content: space-around;
+
 }
 
+
 li {
-	margin: $toc-item-margin;
+	padding: 0 1em;
 	font-size: $base-font-size;
 	font-family: $header-font;
+	width:450px;
 }
 
 .toc {
 	display: block;
 	margin: $toc-sub-item-margin;	
 }
+
+// links
 
 h1 a,
 li a {
@@ -66,19 +104,8 @@ li a:focus, li a:hover{
 	font-size: $base-font-size;
 }
 
-body {
-	font-size: $base-font-size;
-	margin: auto;
-	width: 95vw;
-	max-width: 900px;	
-}
+// headers
 
-main {
-	font-size: $base-font-size;
-	margin: auto;
-	width: 95vw;
-	max-width: 900px;
-}
 
 h1 {
 	font-size: $h1-size;
@@ -91,11 +118,12 @@ h1,h2 {
 
 h2 {
 	text-align: center;
-
+	padding-top: 3vh;
 }
 
 #toc-header {
 	margin: $toc-header-margin;
+	padding-top: 5vh;
 	}
 
 .abstract {
@@ -103,9 +131,7 @@ h2 {
 	margin: $h2-margin;
 }
 
-section {
-	margin: $section-margin;
-}
+// paragraphs
 
 p {
 	font-family: $paragraph-font;
@@ -115,6 +141,17 @@ p {
 
 p + p {
 	text-indent: 3rem;
+}
+
+// images and captions
+
+figure {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
 }
 
 img {
@@ -129,20 +166,3 @@ figcaption {
 	max-width:700px;
 	text-align:center;
 }
-
-
-	ul {display:flex;
-		
-		flex-wrap: wrap;
-		justify-content: space-around;}
-
-	body,
-	header,
-	ul {
-		max-width:1300px;
-		padding:0;
-	}
-
-	li {
-		width:450px;
-	}
